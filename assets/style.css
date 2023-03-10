@@ -21,25 +21,25 @@ textarea{
   padding: auto -10px;
 }
 
-.description{
+/*.description{
   white-space: pre-wrap;
-}
+}*/
 
-.time-block{
+/*.time-block{
   text-align: center;
   border-radius: 15px;
-}
+}*/
 
 .row {
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
   height: 80px;
-  border-top: 1px solid white;;
+  justify-content: center;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: black;
+  color: white;
+  justify-self: left;
 }
 
 .past {
@@ -58,11 +58,12 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  /*border-left: 1px solid black;
   border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  border-bottom-right-radius: 15px;*/
+  background-color: black;
   color: white;
+  border: none;
 }
 
 .saveBtn i:hover {
@@ -70,27 +71,46 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+h1, #currentDay {
+  font-family: 'Homemade Apple', cursive;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.planner-container {
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 20px auto;
+  opacity: 95%;
+  justify-content: center;
+}
 /* For smaller divises
 /** Applies to screens 768px and bellow*/
 @media screen and (max-width: 768px), screen and (max-width: 575px) {
-  .row {
-    height: auto;
-    margin-top: 20px;
+  .planner-container {
+    padding: auto -50px;
+    margin: 0px 0px;
   }
 
-  .hour {
-    padding-right: 17%;
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    /* border-radius: 0;
+    border-bottom: 1px solid black; */
+    /* height: 5%; */
+    margin: 5px;
   }
 
-  .saveBtn {
-    border: 0;
-    border-radius: 0.25rem;
-    height: 50px;
+  body {
+    font-size: 12px;
   }
 
-  textarea {
-    min-height: 85px;
-    border: 0;
+  * {
+    box-sizing: content-box;
   }
 }
-Footer
