@@ -1,11 +1,11 @@
 // Display today's day and date
 var displayTime = document.querySelector("#currentDay");
 
-var currentTime = moment;
+var currentTime = moment();
 
-displayTime.textContent = currentTime.format('dddd, MMM Do YYYY');
+displayTime.textContent = currentTime.format("dddd, MMM Do YYYY");
 
-$(".saveBtn").on("click", function () {
+$(".saveBtn").on("click", function() {
     // saveBtn click listener get row field class and row id values
     // Get nearby values of the description in JQuery
     var value = $(this).siblings(".description").val();
