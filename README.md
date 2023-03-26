@@ -1,5 +1,8 @@
 # Work Day Scheduler Starter Code
+Github licence
+https://camo.githubusercontent.com/5354acf5b8aedebe40a2e38b8be88158741650dc00b74ee9a996f3e270dc6db9/687474703a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c75652e737667
 
+## Description
 This application uses third-party API and JavaScript to create a calendar-style scheduler allowing users to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS by using jQuery.
 
 
