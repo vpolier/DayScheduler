@@ -5,106 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" >
     <link rel="stylesheet" href="./assets/style.css" />
+	<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+	<div id="background_image">
+	</div>
     <div class="container planner-container">
 
 
     <!-- Header -->
-
+	
       <header class="jumbotron">
         <h1 class="daily">Work Day Scheduler<i class="fa fa-pencil" aria-hidden="true"></i></h1><br>
-        <!-- <p class="lead">A simple calendar app for scheduling your work day</p> -->
-        <p id="currentDay" class="lead text-center"></p>
+        <p id="current_day" class="lead text-center"></p>
       </header>
 
 
       <!-- Timeblocks go here -->
 		  <div class="row" id="8am-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 8am-hour">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           8 AM
         </div>
         <textarea id="8am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
       <div class="row" id="9am-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 9am-hour">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           9 AM
         </div>
         <textarea id="9am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
       <div class="row" id="10am-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 10am-hour">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           10 AM
         </div>
         <textarea id="10am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
       <div class="row" id="11am-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 11am-hour">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           11 AM
         </div>
         <textarea id="11am-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
       <div class="row" id="12pm-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 12pm-hour">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           12 PM
         </div>
         <textarea id="12pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
-      <div class="row" id="1pm-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 1pm-hour">
+      <div class="row" id="13pm-row">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           1 PM
         </div>
         <textarea id="1pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
-      <div class="row" id="2pm-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 2pm-hour">
+      <div class="row" id="14pm-row">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           2 PM
         </div>
         <textarea id="2pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
-      <div class="row" id="3pm-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 3pm-hour">
+      <div class="row" id="15pm-row">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           3 PM
         </div>
         <textarea id="3pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
-      <div class="row" id="4pm-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 4pm-hour">
+      <div class="row" id="16pm-row">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           4 PM
         </div>
         <textarea id="4pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
-      <div class="row" id="5pm-row">
-        <div class="col-1 col-xs-1 hour" id="time-block 5pm-hour">
+      <div class="row" id="17pm-row">
+        <div class="col-1 col-xs-1 hour" id="time-block">
           5 PM
         </div>
         <textarea id="5pm-text" rows="3" class="form-control description col-7 col-xs-1"></textarea>
-        <button type="button" class="saveBtn col-1 col-xs-1"><span class="oi oi-task"></span></button>
+        <button type="button" class="saveBtn col-1 col-xs-1"><span class="iconify" data-icon="material-symbols:save"></span></button>
       </div>
 
     </div>  

@@ -1,10 +1,11 @@
 // Display today's day and date
-var displayTime = document.querySelector("#currentDay");
-
+var displayTime = document.querySelector("#current_day");
 var currentTime = moment();
 
-displayTime.textContent = currentTime.format("dddd, MMM Do YYYY");
+//current date to display to user
+displayTime.textContent = currentTime.format("dddd, MMM Do YYYY, h:ma");
 
+//when any of the save buttons are clicked, save inner html to storage
 $(".saveBtn").on("click", function() {
     // saveBtn click listener get row field class and row id values
     // Get nearby values of the description in JQuery
@@ -15,7 +16,7 @@ $(".saveBtn").on("click", function() {
     localStorage.setItem(time, value);
 });
 
-// Get item from local storage if any
+//get all tasks for each hour block, displaying to user
 $("#8am-row .description").val(localStorage.getItem("8am-row"));
 $("#9am-row .description").val(localStorage.getItem("9am-row"));
 $("#10am-row .description").val(localStorage.getItem("10am-row"));
@@ -27,7 +28,7 @@ $("#15pm-row .description").val(localStorage.getItem("15pm-row"));
 $("#16pm-row .description").val(localStorage.getItem("16pm-row"));
 $("#17pm-row .description").val(localStorage.getItem("17pm-row"));
 
-// converting time and display
+//converting time and display
 var hour8 = 8;
 var hour9 = 9;
 var hour10 = 10;
@@ -39,86 +40,86 @@ var hour3 = 15;
 var hour4 = 16;
 var hour5 = 17;
 
-//get current number of hours.
-var currentHour = moment().format('H');
+//get current hour in 24 hour format
+var current_hour = moment().format('H');
 
-// To check the time and add the classes for background indicators
-if (currentHour < hour8) {
+//for each hour block, adjust background colour to show past, present future designation
+if (current_hour < hour8) {
     $("#8am-text").addClass("future");
-} else if (currentHour > hour8) {
+} else if (current_hour > hour8) {
     $("#8am-text").addClass("past");
-} else if (currentHour = hour8) {
+} else if (current_hour = hour8) {
     $("#8am-text").addClass("present");
 }
 
-if (currentHour < hour9) {
+if (current_hour < hour9) {
     $("#9am-text").addClass("future");
-} else if (currentHour > hour9) {
+} else if (current_hour > hour9) {
     $("#9am-text").addClass("past");
-} else if (currentHour = hour9) {
+} else if (current_hour = hour9) {
     $("#9am-text").addClass("present");
 }
 
-if (currentHour < hour10) {
+if (current_hour < hour10) {
     $("#10am-text").addClass("future");
-} else if (currentHour > hour10) {
+} else if (current_hour > hour10) {
     $("#10am-text").addClass("past");
-} else if (currentHour = hour10) {
+} else if (current_hour = hour10) {
     $("#10am-text").addClass("present");
 }
 
-if (currentHour < hour11) {
+if (current_hour < hour11) {
     $("#11am-text").addClass("future");
-} else if (currentHour > hour11) {
+} else if (current_hour > hour11) {
     $("#11am-text").addClass("past");
-} else if (currentHour = hour11) {
+} else if (current_hour = hour11) {
     $("#11am-text").addClass("present");
 }
 
-if (currentHour < hour12) {
+if (current_hour < hour12) {
     $("#12pm-text").addClass("future");
-} else if (currentHour > hour12) {
+} else if (current_hour > hour12) {
     $("#12pm-text").addClass("past");
-} else if (currentHour = hour12) {
+} else if (current_hour = hour12) {
     $("#12pm-text").addClass("present");
 }
 
-if (currentHour < hour1) {
+if (current_hour < hour1) {
     $("#1pm-text").addClass("future");
-} else if (currentHour > hour1) {
+} else if (current_hour > hour1) {
     $("#1pm-text").addClass("past");
-} else if (currentHour = hour1) {
+} else if (current_hour = hour1) {
     $("#1pm-text").addClass("present");
 }
 
-if (currentHour < hour2) {
+if (current_hour < hour2) {
     $("#2pm-text").addClass("future");
-} else if (currentHour > hour2) {
+} else if (current_hour > hour2) {
     $("#2pm-text").addClass("past");
-} else if (currentHour = hour2) {
+} else if (current_hour = hour2) {
     $("#2pm-text").addClass("present");
 }
 
-if (currentHour < hour3) {
+if (current_hour < hour3) {
     $("#3pm-text").addClass("future");
-} else if (currentHour > hour3) {
+} else if (current_hour > hour3) {
     $("#3pm-text").addClass("past");
-} else if (currentHour = hour3) {
+} else if (current_hour = hour3) {
     $("#3pm-text").addClass("present");
 }
 
-if (currentHour < hour4) {
+if (current_hour < hour4) {
     $("#4pm-text").addClass("future");
-} else if (currentHour > hour4) {
+} else if (current_hour > hour4) {
     $("#4pm-text").addClass("past");
-} else if (currentHour = hour4) {
+} else if (current_hour = hour4) {
     $("#4pm-text").addClass("present");
 }
 
-if (currentHour < hour5) {
+if (current_hour < hour5) {
     $("#5pm-text").addClass("future");
-} else if (currentHour > hour5) {
+} else if (current_hour > hour5) {
     $("#5pm-text").addClass("past");
-} else if (currentHour = hour5) {
+} else if (current_hour = hour5) {
     $("#5pm-text").addClass("present");
 }
